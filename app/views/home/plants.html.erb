@@ -1,4 +1,10 @@
-
+<h1>Plants</h1>
+<%@plants.reverse_each do |plant|%>
+    <p><h3><%= plant.name %></h3><br>
+          <%= image_tag plant.image_url(:thumb) if plant.image? %><br>
+         <%= plant.description %>
+         </p>
+  <%end%>
     Flowering Plants
 
     Box, Buxus sempervirens

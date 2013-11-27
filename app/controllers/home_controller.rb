@@ -23,12 +23,16 @@ class HomeController < ApplicationController
   def what_sub
     case params[:key]
     when "birds"
+      @birds = Bird.all
       render :birds
     when "butterflies"
+      @butterflies = Butterfly.all
       render :butterflies
     when "fungi"
+      @fungis = Fungi.all
       render :fungi    
     when "plants"
+      @plants = Plant.all
       render :plants
 
     else

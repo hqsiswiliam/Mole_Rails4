@@ -1,4 +1,10 @@
 <h1>    Butterflies</h1>
+<%@butterflies.reverse_each do |butterfly|%>
+    <p><h3><%= butterfly.name %></h3><br>
+          <%= image_tag butterfly.image_url(:thumb) if butterfly.image? %><br>
+         <%= butterfly.description %>
+         </p>
+  <%end%>
 <p>
       Mole
       Valley is nationally important for its butterflies. These are cold-blooded

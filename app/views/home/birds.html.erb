@@ -1,4 +1,11 @@
-      Mole Valley is home to a wide range of bird species, many of which favour
+<h1>Birds</h1>
+<%@birds.reverse_each do |bird|%>
+    <p><h3><%= bird.name %></h3><br>
+          <%= image_tag bird.image_url(:thumb) if bird.image? %><br>
+         <%= bird.description %>
+         </p>
+  <%end%>
+<p>      Mole Valley is home to a wide range of bird species, many of which favour
       particular habitats. Some of these are highlighted below:
 
     River Mole
@@ -31,4 +38,4 @@
       Our commons and heathlands are home all year round to birds such as finches
       and tits. Rarer summer migrants include woodlarks (Headley Heath),
       nightingales and warblers (Bookham Common). Arguably the most important
-      bird site in Mole Valley is Bookham Common for nightingales.
+      bird site in Mole Valley is Bookham Common for nightingales.</p>
