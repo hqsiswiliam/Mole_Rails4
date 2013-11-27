@@ -17,7 +17,7 @@ ActiveAdmin.register Organisation do
   #using strong parameter to gain access, like event.rb
   controller do
     def permitted_params
-      params.permit(:organisation => [:title, :description])
+      params.permit(:organisation => [:title, :description,:image])
     end
   end
   

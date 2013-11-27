@@ -6,6 +6,9 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
+gem 'carrierwave'
+gem 'rmagick'
+
 gem 'activeadmin', github: 'gregbell/active_admin'
 
 # Use SCSS for stylesheets

@@ -2,5 +2,6 @@
   <p>User: <%=current_user.email%> authorised!</p>
   <%@organisations.reverse_each do |organisation|%>
     <p><b><%= organisation.title %></b><br>
+    			<%= image_tag organisation.image_url(:thumb) if organisation.image? %><br>
          <%= organisation.description %></p>
   <%end%>

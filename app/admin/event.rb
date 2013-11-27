@@ -14,9 +14,18 @@ ActiveAdmin.register Event do
   #  permitted
   # end
 
+  # form do |f|
+  #   f.inputs "Events" do
+  #       f.input :title
+  #       f.input :description
+  #       f.input :image, :as => :file
+  #       f.action :submit
+  #   end
+  # end
+
   controller do
     def permitted_params
-      params.permit(:event => [:title, :description])
+      params.permit(:event => [:title, :description, :image])
     end
   end
   

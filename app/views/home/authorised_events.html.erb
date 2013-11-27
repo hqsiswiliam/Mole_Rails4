@@ -2,7 +2,10 @@
   <p>User: <%=current_user.email%> authorised!</p>
   <%@events.reverse_each do |event|%>
     <p><h3><%= event.title %></h3><br>
-         <%= event.description %></p>
+          <%= image_tag event.image_url(:thumb) if event.image? %><br>
+         <%= event.description %>
+
+         </p>
   <%end%>
   <p>
     Mole Valley has a lively and active community of natural history enthusiasts. There are events
