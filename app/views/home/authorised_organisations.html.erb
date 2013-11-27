@@ -1,0 +1,6 @@
+  <h1>Organisations</h1>
+  <p>User: <%=current_user.email%> authorised!</p>
+  <%@organisations.reverse_each do |organisation|%>
+    <p><b><%= organisation.title %></b><br>
+         <%= organisation.description %></p>
+  <%end%>

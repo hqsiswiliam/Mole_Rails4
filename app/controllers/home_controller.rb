@@ -6,6 +6,14 @@ class HomeController < ApplicationController
   end
 
   def organisations
+    @organisations = Organisation.all
+    if !user_signed_in?
+      render :organisations
+    else
+      if current_user.organisation==true
+        render :authorised_organisations
+      end
+    end
   end
 
   def what_is_here
@@ -30,8 +38,12 @@ class HomeController < ApplicationController
 
   def events
     @events = Event.all
-    if current_user.organisation==true
-      render :authorised_events
+    if !user_signed_in?
+      render :events
+    else
+      if current_user.event==true
+        render :authorised_events
+      end
     end
   end
 
