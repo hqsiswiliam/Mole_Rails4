@@ -14,3 +14,4 @@
 //= require jquery_ujs
 //= require jquery.easing.1.3
 //= require navigation
+//= require modernizr.custom
