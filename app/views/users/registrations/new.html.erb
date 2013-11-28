@@ -4,13 +4,13 @@
   <%= devise_error_messages! %>
 
   <div><%= f.label :email %><br />
-  <%= f.email_field :email, :autofocus => true %></div>
+  <%= f.email_field :email, :autofocus => true, :placeholder=>"hello@example.com", :class=>"mole_reg"%></div>
 
   <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+  <%= f.password_field :password, :placeholder=>"At least 8 letters", :class=>"mole_reg"%></div>
 
   <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation %></div>
+  <%= f.password_field :password_confirmation, :placeholder=>"Please repeat the password", :class=>"mole_reg" %></div>
 
   <div><%= f.submit "Sign up" %></div>
 <% end %>

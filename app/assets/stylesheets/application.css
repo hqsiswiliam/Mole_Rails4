@@ -10,6 +10,7 @@
  *
  *= require layout
  *= require meun
+ *= require input_devise
  *= require_self
 
  */
