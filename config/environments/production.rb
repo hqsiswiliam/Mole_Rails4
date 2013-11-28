@@ -77,4 +77,6 @@ MolePostgres::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  config.preload_frameworks = true
+  config.allow_concurrency = true
 end
