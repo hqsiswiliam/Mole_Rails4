@@ -1,7 +1,8 @@
 <h1>Birds</h1>
+
 <%@birds.reverse_each do |bird|%>
     <p><h3><%= bird.name %></h3><br>
-          <%= image_tag bird.image_url(:thumb) if bird.image? %><br>
+          <img src=<%=bird.image %> height="200" width="200"><br>
          <%= bird.description %>
          </p><hr>
   <%end%>
