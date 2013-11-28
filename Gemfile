@@ -6,6 +6,8 @@ gem 'rails', '4.0.0'
 # Use postgres as the database for Active Record
 gem 'pg'
 
+gem 'fog'
+
 gem 'puma'
 
 gem 'carrierwave'
