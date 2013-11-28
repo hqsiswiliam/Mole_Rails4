@@ -2,7 +2,9 @@
 
 <%@birds.reverse_each do |bird|%>
     <p><h3><%= bird.name %></h3><br>
+          <%if !bird.image.empty?%>
           <img src=<%=bird.image %> height="200" width="200"><br>
+          <%end%>
          <%= bird.description %>
          </p><hr>
   <%end%>
