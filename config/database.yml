@@ -14,10 +14,10 @@ test:
   username: postgres
   password: yuanjing
 
-development:
+production:
   adapter: postgresql
   encoding: unicode
-  database: COMM013_Mole
+  database: COMM013_Mole_Production
   pool: 5
   username: postgres
   password: yuanjing
