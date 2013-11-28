@@ -15,6 +15,7 @@
  *= require layout
  *= require meun
  *= require input_devise
+ *= require big_button
  *= require_self
 
  */

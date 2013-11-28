@@ -59,13 +59,13 @@
     The presence of a rich and varied underlying
     <a href="http://www.landis.org.uk/soilscapes">geology</a>
     means the Mole Valley district is home to a rich array of
-    species << insert link to the "What is Here" page >> and
+    species <%= link_to "What is here?", home_what_is_here_path%> and
     <a href="http://www.surreycc.gov.uk/sccwebsite/sccwspages.nsf/LookupWebPagesByTITLE_RTF/Surrey+Biodiversity+Action+Plan?opendocument">habitats</a>
     including chalk grassland, lowland heath, wood pasture, and dry acid grassland to name a few, as well as the UK’s
     only
-    native Boxwood << insert link to Plants page >>
+    native Boxwood <%= link_to "Plants", home_what_sub_path(:key=>"plants") %>
     population and strong populations of the
-    Purple Emperor butterfly << insert link to Butterflies page >>.
+    Purple Emperor butterfly <%= link_to "Butterflies", home_what_sub_path(:key=>"butterflies")%>.
     Some of these important and impressive
     habitats and landscape features can be accessed easily from the District's 
     towns. Mole Valley District Council
@@ -93,7 +93,7 @@
     This site has been prepared by, and is maintained by Mole Valley's Natural Conservation Group. This group has
     representatives
     from the organisations listed below. The
-    organisations << Insert link to Organisations Page >>
+     <%=link_to "organisations", home_organisations_path%>
     have an interest in Mole Valley's natural history and are responsible
     for managing areas of the District's rich and varied landscape. Opportunities exist to get involved with these
     organisations
