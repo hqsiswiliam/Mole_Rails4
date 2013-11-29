@@ -1,5 +1,9 @@
 <h1>Birds</h1>
 
+<p>      Mole Valley is home to a wide range of bird species, many of which favour
+      particular habitats. Some of these are highlighted below:</p>
+
+      
 <%@birds.reverse_each do |bird|%>
     <p><h3><%= bird.name %></h3><br>
           <%if !bird.image.empty?%>
@@ -8,37 +12,7 @@
          <%= bird.description %>
          </p><hr>
   <%end%>
-<p>      Mole Valley is home to a wide range of bird species, many of which favour
-      particular habitats. Some of these are highlighted below:
-
-    River Mole
-      Kingfishers can be seen along the length of the river – a flash of blue and
-      orange flying swiftly past. Grey wagtails are also common often seen around
-      the Leatherhead Town Bridge and in Winter goosanders can be seen swimming
-      along the river.
-
-    Ponds and streams
-      Many common birds can be seen on our ponds and streams including mallards,
-      coots, moorhens, Canada geese, greylag geese and grey wagtails.
-
-    Farmland
-      There is a range of birds found in our farmland habitat including game birds
-      such as pheasants and red-legged partridge. In the hedgerows you can see
-      yellowhammers and finches and feeding in the fields there are often skylarks
-      and thrushes; in the Winter the song and mistle thrushes are joined by
-      redwings and fieldfares from Scandinavia.
-
-    Woodland
-      Our woodland areas host a wide variety of birds including 5 species of tit
-      (blue, great, coal, long-tailed and marsh), great spotted woodpeckers,
-      redpolls and siskins.
-
-    Urban parks, green spaces and gardens
-      Another rich environment for several species of birds which include:
-      green woodpeckers, robins, blackbirds, tits, pied wagtails and many more.
-
-    Commons and Heaths
-      Our commons and heathlands are home all year round to birds such as finches
-      and tits. Rarer summer migrants include woodlarks (Headley Heath),
-      nightingales and warblers (Bookham Common). Arguably the most important
-      bird site in Mole Valley is Bookham Common for nightingales.</p>
+  <p><h3>Little Grebes</h3><br>
+  <%= image_tag("birds/Little Grebes.jpg",:height=>"200", :width=>"200") %><br>
+  A small, dumpy grebe which often appears to have a 'fluffy' rear end. It readily dives when disturbed, surfacing unseen some distance away. In summer it has a bright chestnut throat and cheeks and a pale gape patch at the base of the bill. It can be noisy, with a distinctive whinnying trill.
+  </p><hr>

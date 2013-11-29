@@ -1,43 +1,18 @@
 <h1>Fungi</h1>
-<%@fungis.reverse_each do |fungi|%>
+
+    <p>  The good, the bad and the beautiful! Here are five examples of fungi that are
+      typical of habitats in Mole Valley. They have been
+      selected to provide a variety of forms, and times of occurrence.
+      (Text and photographs by Ray Tantram &copy 9th. March 2005)</p>
+
+      <%@fungis.reverse_each do |fungi|%>
     <p><h3><%= fungi.name %></h3><br>
           <%= image_tag fungi.image_url(:thumb) if fungi.image? %><br>
          <%= fungi.description %>
          </p><hr>
   <%end%>
-    Mole Valley Fungi
-
-    
-      The good, the bad and the beautiful! Here are five examples of fungi that are
-      typical of habitats in Mole Valley. They have been
-      selected to provide a variety of forms, and times of occurrence.
-      (Text and photographs by Ray Tantram &copy 9th. March 2005)
-
-
-    Penny Bun: Boletus edulis
-
-      A prized edible species, found in broadleaved and mixed woodland. Forms
-      (mycorrhizal) association with the tree roots.
-      One of the <q>sponge caps</q> with pores in place of gills on its lower surface.
-
-    Death Cap: Amanita phalloides
-      Highly toxic, a quarter of a cap kills very unpleasantly - but not slugs!
-      Most of the Amanita family are poisonous.
-      Learn to recognise these fungi if you collect for the table.
-      Found under oak, with which it forms a (mycorrhizal) association.
-
-    Sulphur Polypore; Chicken of the Woods: Laetiporus sulphureus
-      Brilliant yellow, with salmon-orange tones.Grows on trunks of living trees,
-      mainly oak and chestnut, and also even on Yew*, causing heart rots.
-      Edible, and prized in USA, but can cause gastro-intestinal upsets. 
-      [*  do not eat any picked from this toxic tree!]
-
-    Scarlet elfcup: Sarcosypha austriaca
-      This bright cup fungus (ascomycete) is occasionally found in Mole valley,
-      very early in the year, growing on old mossy fallen trunks in
-      woodland, especially on hazel and elm. The cups are 1-5 cm. across.
-
-    Thimble Morel: Verpa conica
-      Quite rare and confined to hawthorn scrub on chalk. There is much of this
-      in Mole Valley, and 2004 was a good year for this small and
-      elusive spring species. An ascomycete with a hollow stem.
+  <p><h3>Laetip_012</h3><br>
+  <%= image_tag("fungi/Laetip_012.jpg",:height=>"200", :width=>"200") %><br>
+  Sulphur polypore; Chicken of the woods
+Brilliant yellow, with salmon-orange tones.Grows on trunks of living trees, mainly oak and chestnut, and also even on Yew*, causing heart rots. Edible, and prized in USA, but can cause gastro-intestinal upsets. 
+  </p><hr>
