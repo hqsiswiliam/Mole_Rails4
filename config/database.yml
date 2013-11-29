@@ -6,7 +6,7 @@ development:
   username: postgres
   password: yuanjing
 
-test:
+test: &test
   adapter: postgresql
   encoding: unicode
   database: COMM013_Mole_test
@@ -21,3 +21,5 @@ production:
   pool: 5
   username: postgres
   password: yuanjing
+cucumber:
+  <<: *test

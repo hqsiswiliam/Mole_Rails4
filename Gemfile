@@ -18,6 +18,7 @@ gem 'activeadmin', github: 'gregbell/active_admin'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
+
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
@@ -44,6 +45,9 @@ end
 #adding rspec to here
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
+  gem 'rspec'
+	gem 'database_cleaner'
+	gem 'cucumber-rails', :require => false
 end
 
 # Use ActiveModel has_secure_password
