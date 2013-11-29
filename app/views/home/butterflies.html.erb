@@ -19,7 +19,7 @@
 
       <%@butterflies.reverse_each do |butterfly|%>
     <hr><p><h3><%= butterfly.name %></h3><br>
-          <%= image_tag butterfly.image_url(:thumb) if butterfly.image? %><br>
+          <img src=<%=butterfly.image %> height="200" width="200"><br>
          <%= butterfly.description %>
          </p>
   <%end%>

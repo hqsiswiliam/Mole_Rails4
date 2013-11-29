@@ -3,13 +3,13 @@
     <p>Flowering Plants</p>
     <%@plants.reverse_each do |plant|%>
     <hr><p><h3><%= plant.name %></h3><br>
-          <%= image_tag plant.image_url(:thumb) if plant.image? %><br>
+          <img src=<%=plant.image %> height="200" width="200"><br>
          <%= plant.description %>
-         </p><hr>
+         </p>
   <%end%>
 
   <hr><p><h3>man_orchid_close</h3><br>
-  <%= image_tag("fungi/man_orchid_close.jpg",:height=>"200", :width=>"200") %><br>
+  <%= image_tag("plants/man_orchid_close.jpg",:height=>"200", :width=>"200") %><br>
   Some sixteen species of wild orchid can be found in Mole Valley;
       some in the clay woods and others on the chalk downs and woods. The Man Orchid
       is perhaps one of the most intriguing because the shape of its flower resembles

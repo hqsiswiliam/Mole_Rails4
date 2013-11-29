@@ -7,7 +7,7 @@
 
       <%@fungis.reverse_each do |fungi|%>
     <hr><p><h3><%= fungi.name %></h3><br>
-          <%= image_tag fungi.image_url(:thumb) if fungi.image? %><br>
+          <img src=<%=fungi.image %> height="200" width="200"><br>
          <%= fungi.description %>
          </p>
   <%end%>
