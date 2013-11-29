@@ -11,7 +11,9 @@
     <div><%= f.check_box :remember_me %> <%= f.label :remember_me %></div>
   <% end -%>
 
-  <div><%= f.submit "Sign in" %></div>
+  <div><button type="submit" class="a-btn" value="Sign in">
+						<span class="a-btn-text">Enter</span>
+						<span class="a-btn-slide-text">Log In!</span>
+						<span class="a-btn-icon-right"><span></span></span>
+					</button></div>
 <% end %>
-
-<%= render "users/shared/links" %>

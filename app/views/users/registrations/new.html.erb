@@ -10,9 +10,11 @@
   <%= f.password_field :password, :placeholder=>"At least 8 letters", :class=>"mole_reg"%></div>
 
   <div><%= f.label :password_confirmation %><br />
-  <%= f.password_field :password_confirmation, :placeholder=>"Please repeat the password", :class=>"mole_reg" %></div>
+  <%= f.password_field :password_confirmation, :placeholder=>"Please repeat the password", :class=>"mole_reg" %></div><br>
 
-  <div><%= f.submit "Sign up" %></div>
+  <div><button type="submit" class="a-btn" value="Sign up">
+						<span class="a-btn-text">Become a member</span>
+						<span class="a-btn-slide-text">Sign Up!</span>
+						<span class="a-btn-icon-right"><span></span></span>
+					</button></div>
 <% end %>
-
-<%= render "users/shared/links" %>
