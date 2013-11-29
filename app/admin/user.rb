@@ -16,7 +16,7 @@ ActiveAdmin.register User do
 
   controller do
     def permitted_params
-      params.permit(:user => [:organisation, :event])
+      params.permit(:user => [:organisation, :event, :email, :password])
     end
   end
 
