@@ -3,7 +3,9 @@
     <p>Flowering Plants</p>
     <%@plants.reverse_each do |plant|%>
     <hr><p><h3><%= plant.name %></h3><br>
+          <%if !plant.image.empty?%>
           <img src=<%=plant.image %> height="200" width="200"><br>
+          <%end%>
          <%= plant.description %>
          </p>
   <%end%>

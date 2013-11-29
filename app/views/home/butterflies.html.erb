@@ -19,7 +19,9 @@
 
       <%@butterflies.reverse_each do |butterfly|%>
     <hr><p><h3><%= butterfly.name %></h3><br>
+          <%if !butterfly.image.empty?%>
           <img src=<%=butterfly.image %> height="200" width="200"><br>
+          <%end%>
          <%= butterfly.description %>
          </p>
   <%end%>

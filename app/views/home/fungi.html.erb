@@ -7,7 +7,9 @@
 
       <%@fungis.reverse_each do |fungi|%>
     <hr><p><h3><%= fungi.name %></h3><br>
+          <%if !fungi.image.empty?%>
           <img src=<%=fungi.image %> height="200" width="200"><br>
+          <%end%>
          <%= fungi.description %>
          </p>
   <%end%>
