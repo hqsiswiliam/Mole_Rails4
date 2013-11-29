@@ -5,14 +5,14 @@
 
       
 <%@birds.reverse_each do |bird|%>
-    <p><h3><%= bird.name %></h3><br>
+    <hr><p><h3><%= bird.name %></h3><br>
           <%if !bird.image.empty?%>
           <img src=<%=bird.image %> height="200" width="200"><br>
           <%end%>
          <%= bird.description %>
-         </p><hr>
+         </p>
   <%end%>
-  <p><h3>Little Grebes</h3><br>
+  <hr><p><h3>Little Grebes</h3><br>
   <%= image_tag("birds/Little Grebes.jpg",:height=>"200", :width=>"200") %><br>
   A small, dumpy grebe which often appears to have a 'fluffy' rear end. It readily dives when disturbed, surfacing unseen some distance away. In summer it has a bright chestnut throat and cheeks and a pale gape patch at the base of the bill. It can be noisy, with a distinctive whinnying trill.
-  </p><hr>
+  </p>

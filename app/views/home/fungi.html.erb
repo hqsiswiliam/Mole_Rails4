@@ -6,13 +6,13 @@
       (Text and photographs by Ray Tantram &copy 9th. March 2005)</p>
 
       <%@fungis.reverse_each do |fungi|%>
-    <p><h3><%= fungi.name %></h3><br>
+    <hr><p><h3><%= fungi.name %></h3><br>
           <%= image_tag fungi.image_url(:thumb) if fungi.image? %><br>
          <%= fungi.description %>
-         </p><hr>
+         </p>
   <%end%>
-  <p><h3>Laetip_012</h3><br>
+  <hr><p><h3>Laetip_012</h3><br>
   <%= image_tag("fungi/Laetip_012.jpg",:height=>"200", :width=>"200") %><br>
   Sulphur polypore; Chicken of the woods
 Brilliant yellow, with salmon-orange tones.Grows on trunks of living trees, mainly oak and chestnut, and also even on Yew*, causing heart rots. Edible, and prized in USA, but can cause gastro-intestinal upsets. 
-  </p><hr>
+  </p>
