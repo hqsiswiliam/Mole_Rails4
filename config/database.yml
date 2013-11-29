@@ -2,7 +2,7 @@ development:
   adapter: postgresql
   encoding: unicode
   database: COMM013_Mole
-  pool: 5
+  pool: 1000
   username: postgres
   password: yuanjing
 
@@ -10,7 +10,7 @@ test: &test
   adapter: postgresql
   encoding: unicode
   database: COMM013_Mole_test
-  pool: 5
+  pool: 1000
   username: postgres
   password: yuanjing
 
@@ -18,7 +18,7 @@ production:
   adapter: postgresql
   encoding: unicode
   database: COMM013_Mole_Production
-  pool: 5
+  pool: 1000
   username: postgres
   password: yuanjing
 cucumber:
