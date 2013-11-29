@@ -1,25 +1,21 @@
-# development:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: COMM013_Mole
-#   pool: 1000
-#   username: postgres
-#   password: yuanjing
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: COMM013_Mole
+  pool: 1000
+  username: postgres
+  password: yuanjing
 
-# test: &test
-#   adapter: postgresql
-#   encoding: unicode
-#   database: COMM013_Mole_test
-#   pool: 1000
-#   username: postgres
-#   password: yuanjing
+test: &test
+  adapter: postgresql
+  encoding: unicode
+  database: COMM013_Mole_test
+  pool: 1000
+  username: postgres
+  password: yuanjing
 
-# production:
-#   adapter: postgresql
-#   encoding: unicode
-#   database: COMM013_Mole_Production
-#   pool: 1000
-#   username: postgres
-#   password: yuanjing
-# cucumber:
-#   <<: *test
+production:
+  adapter: postgresql
+  encoding: unicode
+cucumber:
+  <<: *test
